@@ -17,7 +17,7 @@ lang: en
       <aside class="my-20">
         <h2 class="text-2xl mb-3 text-gray-600">{{ 'RelatedPosts' | i18n }}</h2>
           <ul>
-          {%- for post in collections.user -%}
+          {%- for post in collections.user | sortByOrder -%}
             {% if page.url != post.url %}
             <li class="mb-2"><a href="{{ post.url }}" class="text-blue-600 underline">{{ post.data.title }}</a></li>
             {% endif %}

@@ -18,7 +18,7 @@ lang: en
         <section class="p-8 border border-solid border-gray-200 rounded shadow-lg">
           <h2 class="text-2xl mb-3 text-gray-600">{{ 'User' | i18n }}</h2>
           <ul>
-          {%- for post in collections.user -%}
+          {%- for post in collections.user | sortByOrder -%}
             <li class="mb-2"><a href="{{ post.url }}" class="text-blue-600 underline">{{ post.data.title }}</a></li>
           {%- endfor -%}
           </ul>
@@ -27,7 +27,7 @@ lang: en
         <section class="p-8 border border-solid border-gray-200 rounded shadow-lg">
           <h2 class="text-2xl mb-3 text-gray-600">{{ 'Administrator' | i18n }}</h2>
           <ul>
-          {%- for post in collections.administrator -%}
+          {%- for post in collections.administrator | sortByOrder -%}
             <li class="mb-2"><a href="{{ post.url }}" class="text-blue-600 underline">{{ post.data.title }}</a></li>
           {%- endfor -%}
           </ul>
@@ -36,7 +36,7 @@ lang: en
         <section class="p-8 border border-solid border-gray-200 rounded shadow-lg">
           <h2 class="text-2xl mb-3 text-gray-600">{{ 'Productor' | i18n }}</h2>
           <ul>
-          {%- for post in collections.productor -%}
+          {%- for post in collections.productor | sortByOrder -%}
             <li class="mb-2"><a href="{{ post.url }}" class="text-blue-600 underline">{{ post.data.title }}</a></li>
           {%- endfor -%}
           </ul>
