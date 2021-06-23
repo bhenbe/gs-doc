@@ -1,13 +1,14 @@
-const pluginTailwind = require('eleventy-plugin-tailwindcss');
+//const pluginTailwind = require('eleventy-plugin-tailwindcss');
 const i18n = require('eleventy-plugin-i18n');
 
 module.exports = (config) => {
-    config.addPlugin(pluginTailwind, {
+    /*config.addPlugin(pluginTailwind, {
         src: 'src/assets/css/*',
         configFile: 'tailwind.config.js'
     });
 
-    config.setDataDeepMerge(true);
+    config.setDataDeepMerge(true);*/
+    config.addPassthroughCopy('./src/assets/css/styles.css')
     config.addPassthroughCopy('src/assets/img/**/*');
     config.addWatchTarget("src/assets/js/");
 
