@@ -1,6 +1,7 @@
 ---
 title: Créer votre profil
 layout: layouts/page-user.njk
+order: 1
 tags:
  - user
 ---

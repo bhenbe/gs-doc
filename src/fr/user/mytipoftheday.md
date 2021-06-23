@@ -1,6 +1,7 @@
 ---
 title: Profiter des astuces et conseils
 layout: layouts/page-user.njk
+order: 7
 tags:
  - user
 ---

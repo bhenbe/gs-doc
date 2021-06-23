@@ -1,6 +1,7 @@
 ---
 title: Signer son contrat
 layout: layouts/page-user.njk
+order: 2
 tags:
  - user
 ---

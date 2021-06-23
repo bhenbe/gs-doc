@@ -1,6 +1,7 @@
 ---
 title: Gérer les prestations
 layout: layouts/page-administrator.njk
+order: 1
 tags:
  - administrator
 ---

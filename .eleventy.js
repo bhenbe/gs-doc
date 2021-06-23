@@ -55,6 +55,15 @@ module.exports = (config) => {
         }
     });
 
+    // Create the filter function.
+    function sortByOrder(values) {
+        let vals = [...values]
+        return vals.sort((a, b) => Math.sign(a.data.order - b.data.order))
+    }
+
+    // Add the filter.
+    config.addFilter('sortByOrder', sortByOrder)
+
     return {
         templateFormats: ["md", "html", "njk"],
         dir: {
