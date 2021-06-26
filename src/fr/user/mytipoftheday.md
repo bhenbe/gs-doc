@@ -10,4 +10,4 @@ Vous pouvez bénéficier de conseils sur la page My tip of the day disponible da
 La page My tip of the day se compose de deux listes distinctes sous deux onglets:
 
 - les conseils du jour spécifiés par votre organisation
-- les conseils du jour génériques spécifiés par l’équipe de TheGreenShote
+- les conseils du jour génériques spécifiés par l’équipe de TheGreenShot
