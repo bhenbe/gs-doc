@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+layout: layouts/en/home.njk
 title: TheGreenShot Documentation
 ---
 
