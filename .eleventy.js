@@ -8,9 +8,10 @@ module.exports = (config) => {
     });
 
     config.setDataDeepMerge(true);*/
-    config.addPassthroughCopy('./src/assets/css/styles.css')
+    config.addPassthroughCopy('./src/assets/css/styles.css');
     config.addPassthroughCopy('src/assets/img/**/*');
     config.addWatchTarget("src/assets/js/");
+    config.addPassthroughCopy('./.htaccess');
 
     config.addPlugin(i18n, {
         translations: {
